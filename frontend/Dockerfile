@@ -3,8 +3,8 @@ FROM node:22.12-alpine AS reactbuild
 WORKDIR /website/frontend
 
 # cicd.yml 에서 build-arg 로 넘긴 값 받기
-#   build-args:
-      VITE_API_SERVER_HOST=${{ secrets.ALLOWED_ORIGIN }}
+#   build-args: 
+#  VITE_API_SERVER_HOST=${{ secrets.ALLOWED_ORIGIN }}
 # ARG: 이미지 만들 때 필요
 ARG VITE_API_SERVER_HOST
 
